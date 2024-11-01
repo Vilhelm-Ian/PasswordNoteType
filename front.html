@@ -187,7 +187,11 @@
           document.getElementById("wrong").innerHTML = `There was a problem ${err}`
         } else if (result) {
           document.getElementById("correct").innerHTML = "Correct"
-        } else {document.getElementById("wrong").innerHTML = "Wrong"}
+          document.getElementById("wrong").innerHTML = ""
+        } else {
+          document.getElementById("wrong").innerHTML = "Wrong"
+          document.getElementById("correct").innerHTML = ""
+        }
       }
     }
     function generate() {
